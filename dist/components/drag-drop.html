@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full overflow-x-hidden">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      rel="icon"
+      href="https://michiganvirtual.org/wp-content/uploads/2021/10/cropped-mv-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <script src="../main.js"></script>
+  </head>
+  <body class="font-body w-full overflow-x-hidden">
+    <header
+      class="flex justify-center"
+      style="
+        background-image: linear-gradient(180deg, #115e6e 0%, #093c44 100%);
+      "
+    >
+      <div class="text-white container p-12 mx-auto">
+        <span>Michigan Ongoing Health & Safety Training Refresher 2023</span
+        ><br />
+        <span class="text-lg md:text-xl font-body font-extrabold">
+          Section 1: Administration of Medications
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="container mx-auto px-4 lg:px-24 py-12">
+        <h1
+          class="text-4xl font-bold text-mp-teal tracking-tighter uppercase md:mt-6 mb-4"
+        >
+          Participation Exercise:<br />
+          <span class="font-normal">Routes of Administration</span>
+        </h1>
+        <hr class="border-4 border-green w-12 mb-4" />
+        <h3
+          class="text-xl text-center font-bold text-red-500 invisible mb-4 feedback"
+        >
+          Please review the “Routes of Administration” page and try again.
+        </h3>
+        <div class="grid grid-cols-4 gap-2">
+          <div
+            class="flex flex-col items-center border-dashed border-dark-gray border-2 py-2 col-span-4 examples"
+          >
+            <h3 class="text-2xl text-deep-teal font-bold uppercase">
+              Examples
+            </h3>
+            <div class="flex flex-wrap lg:justify-center draggable">
+              <span class="p-4 m-2 text-lg bg-deep-teal text-white oral"
+                >Liquid</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white oral"
+                >Tablets</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white topical"
+                >Creams</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white oral"
+                >Capsules</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white oral"
+                >Pills</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white topical"
+                >Ointments</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white topical"
+                >Drops</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white inhalant"
+                >Nebulizers</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white inhalant"
+                >Sprays</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white injectable"
+                >EpiPen</span
+              ><span class="p-4 m-2 text-lg bg-deep-teal text-white injectable"
+                >Twinject</span
+              >
+            </div>
+          </div>
+          <div
+            class="col-span-2 lg:col-span-1 min-h-96 border-dashed border-dark-gray border-2 py-2"
+          >
+            <h3 class="text-center text-lg text-deep-teal uppercase font-bold">
+              Oral
+            </h3>
+            <div id="oral" class="p-4 droppable h-48 md:h-96"></div>
+          </div>
+          <div
+            class="col-span-2 lg:col-span-1 min-h-96 border-dashed border-dark-gray border-2 py-2"
+          >
+            <h3 class="text-center text-lg text-deep-teal uppercase font-bold">
+              Topical
+            </h3>
+            <div id="topical" class="p-4 droppable h-48 md:h-96"></div>
+          </div>
+          <div
+            class="col-span-2 lg:col-span-1 min-h-96 border-dashed border-dark-gray border-2 py-2"
+          >
+            <h3 class="text-center text-lg text-deep-teal uppercase font-bold">
+              Inhalants
+            </h3>
+            <div id="inhalant" class="p-4 droppable h-48 md:h-96"></div>
+          </div>
+          <div
+            class="col-span-2 lg:col-span-1 border-dashed border-dark-gray border-2 py-2"
+          >
+            <h3 class="text-center text-lg text-deep-teal uppercase font-bold">
+              Automatic Injectable
+            </h3>
+            <div id="injectable" class="p-4 droppable h-48 md:h-96"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Martel Sans";
+  font-display: swap;
+  src: url(assets/fonts/martelsans-ultralight.otf) format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Martel Sans";
+  font-display: swap;
+  src: url(assets/fonts/martelsans-light.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Martel Sans";
+  font-display: swap;
+  src: url(assets/fonts/martelsans-regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Martel Sans";
+  font-display: swap;
+  src: url(assets/fonts/martelsans-demibold.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Martel Sans";
+  font-display: swap;
+  src: url(assets/fonts/martelsans-extrabold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Martel Sans";
+  font-display: swap;
+  src: url(assets/fonts/martelsans-heavy.otf) format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-XLightItalic.woff) format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-XLight.woff) format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-LightItalic.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-Book.woff2) format("woff2"),
+    url(assets/fonts/Gotham-Book.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-BookItalic.woff2) format("woff2"),
+    url(assets/fonts/Gotham-BookItalic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-Medium.woff2) format("woff2"),
+    url(assets/fonts/Gotham-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-MediumItalic.woff2) format("woff2"),
+    url(assets/fonts/Gotham-MediumItalic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-Bold.woff2) format("woff2"),
+    url(assets/fonts/Gotham-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-BoldItalic.woff2) format("woff2"),
+    url(assets/fonts/Gotham-BoldItalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-Black.woff2) format("woff2"),
+    url(assets/fonts/Gotham-Black.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-BlackItalic.woff2) format("woff2"),
+    url(assets/fonts/Gotham-BlackItalic.woff) format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-Ultra.woff2) format("woff2"),
+    url(assets/fonts/Gotham-Ultra.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  font-display: swap;
+  src: url(assets/fonts/Gotham-UltraItalic.woff2) format("woff2"),
+    url(assets/fonts/Gotham-UltraItalic.woff) format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+ul li::before {
+  color: #6d6e71;
+}
+
+.video-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  table thead {
+    display: none;
+  }
+  table td {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    text-align: right;
+    align-items: flex-start;
+  }
+  table tr {
+    border: solid 2px #093c44;
+    margin: 20px;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    min-width: 50%;
+    text-align: left;
+    font-weight: bold;
+    padding-right: 27%;
+  }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

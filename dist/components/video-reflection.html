@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full overflow-x-hidden">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      rel="icon"
+      href="https://michiganvirtual.org/wp-content/uploads/2021/10/cropped-mv-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <script defer src="../main.js"></script>
+  </head>
+  <body class="font-body w-full overflow-x-hidden">
+    <header
+      class="flex justify-center"
+      style="
+        background-image: linear-gradient(180deg, #115e6e 0%, #093c44 100%);
+      "
+    >
+      <div class="text-white container p-12 mx-auto">
+        <span>Michigan Ongoing Health & Safety Training Refresher 2023</span
+        ><br />
+        <span class="text-lg md:text-xl font-body font-extrabold">
+          Section 2: Prevention & Response to Emergencies Due to Food & Allergic
+          Reactions
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="container mx-auto px-4 lg:px-24 py-12">
+        <h1
+          class="text-4xl font-bold text-mp-teal tracking-tighter uppercase md:mt-6 mb-4"
+        >
+          Video: Severe Reactions
+        </h1>
+        <hr class="border-4 border-green w-12 mb-4" />
+        <p class="text-lg text-dark-gray font-normal mb-8 lg:w-3/4">
+          This video gives a good overview of the symptoms related to food
+          allergies.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eNgMrr1gGOk"
+          title="YouTube video player"
+          frameborder="0"
+          class="mx-auto mb-8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="grid md:grid-cols-2 mb-8">
+          <div>
+            <form action="#" class="food-allergens__form mb-4" id="">
+              <h3
+                class="text-xl text-deep-teal uppercase font-bold mb-2 hidden food-allergens__validation"
+              >
+                Thank you for submitting your answers!
+              </h3>
+              <textarea
+                name=""
+                class="bg-slate-100 p-2 mb-4"
+                placeholder="Enter text here"
+                cols="40"
+                rows="5"
+                id=""
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="block bg-dark-teal hover:bg-deep-teal font-bold rounded-sm px-8 py-4 text-white"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div>
+            <h3 class="text-xl text-deep-teal uppercase font-bold mb-4">
+              Your Answer:
+            </h3>
+            <p
+              class="text-dark-gray font-normal text-xl food-allergens__answer"
+              id=""
+            ></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
