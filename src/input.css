@@ -1,42 +1,48 @@
 @font-face {
   font-family: "Martel Sans";
   font-display: swap;
-  src: url(assets/fonts/martelsans-ultralight.otf) format("opentype");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/martelsans-ultralight.otf)
+    format("opentype");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Martel Sans";
   font-display: swap;
-  src: url(assets/fonts/martelsans-light.otf) format("opentype");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/martelsans-light.otf)
+    format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Martel Sans";
   font-display: swap;
-  src: url(assets/fonts/martelsans-regular.otf) format("opentype");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/martelsans-regular.otf)
+    format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Martel Sans";
   font-display: swap;
-  src: url(assets/fonts/martelsans-demibold.otf) format("opentype");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/martelsans-demibold.otf)
+    format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Martel Sans";
   font-display: swap;
-  src: url(assets/fonts/martelsans-extrabold.otf) format("opentype");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/martelsans-extrabold.otf)
+    format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Martel Sans";
   font-display: swap;
-  src: url(assets/fonts/martelsans-heavy.otf) format("opentype");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/martelsans-heavy.otf)
+    format("opentype");
   font-weight: 800;
   font-style: normal;
 }
@@ -44,108 +50,132 @@
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-XLightItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-XLightItalic.woff)
+    format("woff");
   font-weight: 100;
   font-style: italic;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-XLight.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-XLight.woff)
+    format("woff");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-Light.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Light.woff)
+    format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-LightItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-LightItalic.woff)
+    format("woff");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-Book.woff2) format("woff2"),
-    url(assets/fonts/Gotham-Book.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Book.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Book.woff)
+      format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-BookItalic.woff2) format("woff2"),
-    url(assets/fonts/Gotham-BookItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-BookItalic.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-BookItalic.woff)
+      format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-Medium.woff2) format("woff2"),
-    url(assets/fonts/Gotham-Medium.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Medium.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Medium.woff)
+      format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-MediumItalic.woff2) format("woff2"),
-    url(assets/fonts/Gotham-MediumItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-MediumItalic.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-MediumItalic.woff)
+      format("woff");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-Bold.woff2) format("woff2"),
-    url(assets/fonts/Gotham-Bold.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Bold.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Bold.woff)
+      format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-BoldItalic.woff2) format("woff2"),
-    url(assets/fonts/Gotham-BoldItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-BoldItalic.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-BoldItalic.woff)
+      format("woff");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-Black.woff2) format("woff2"),
-    url(assets/fonts/Gotham-Black.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Black.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Black.woff)
+      format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-BlackItalic.woff2) format("woff2"),
-    url(assets/fonts/Gotham-BlackItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-BlackItalic.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-BlackItalic.woff)
+      format("woff");
   font-weight: 800;
   font-style: italic;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-Ultra.woff2) format("woff2"),
-    url(assets/fonts/Gotham-Ultra.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Ultra.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-Ultra.woff)
+      format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: url(assets/fonts/Gotham-UltraItalic.woff2) format("woff2"),
-    url(assets/fonts/Gotham-UltraItalic.woff) format("woff");
+  src: url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-UltraItalic.woff2)
+      format("woff2"),
+    url(https://mindful-practices-theme.netlify.app/assets/fonts/Gotham-UltraItalic.woff)
+      format("woff");
   font-weight: 900;
   font-style: italic;
 }
