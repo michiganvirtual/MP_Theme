@@ -60,7 +60,8 @@ $(document).ready(function () {
 
   $(".tabs__content>div:not(:first)").addClass("hidden");
 
-  $(".tabs li a").on("click", function () {
+  $(".tabs li a").on("click", function (e) {
+    e.preventDefault();
     var t = $(this).attr("id");
     if ($(this).hasClass("inactive")) {
       //this is the start of our condition
