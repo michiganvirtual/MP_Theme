@@ -279,6 +279,8 @@ ul li::before {
   transform: rotateY(180deg);
 }
 
+@import "../node_modules/jquery-ui/themes/base/all.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

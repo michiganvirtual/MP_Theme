@@ -1,7 +1,10 @@
 const { event } = require("jquery");
 const $ = require("jquery");
+require("jquery-ui");
+import "jquery-ui/themes/base/all.css";
 require("jquery-ui/ui/widgets/draggable");
 require("jquery-ui/ui/widgets/droppable");
+require("jquery-ui/ui/widgets/slider");
 
 $(document).ready(function () {
   $(".flip-card").attr("tabindex", "0");
@@ -130,4 +133,7 @@ $(document).ready(function () {
     $(".food-allergens__validation").removeClass("hidden");
     $(".food-allergens__answer").text(answer);
   });
+
+  /* Slider Inputs */
+  $(".slider_input").slider();
 });
