@@ -16,15 +16,15 @@ $(document).ready(function () {
   var accordionButtons = $(".accordion-controls li a");
 
   $(".accordion-controls li a").on("click", function (e) {
-    $control = $(this);
-    accordionContent = $control.attr("aria-controls");
+    var $control = $(this);
+    var accordionContent = $control.attr("aria-controls");
     checkOthers($control[0]);
 
-    isAriaExp = $control.attr("aria-expanded");
-    newAriaExp = isAriaExp == "false" ? "true" : "false";
+    var isAriaExp = $control.attr("aria-expanded");
+    var newAriaExp = isAriaExp == "false" ? "true" : "false";
     $control.attr("aria-expanded", newAriaExp);
 
-    isAriaHid = $("#" + accordionContent).attr("aria-hidden");
+    var isAriaHid = $("#" + accordionContent).attr("aria-hidden");
     if (isAriaHid == "true") {
       $("#" + accordionContent).attr("aria-hidden", "false");
       $("#" + accordionContent).toggleClass("max-h-full");
@@ -46,7 +46,7 @@ $(document).ready(function () {
       if (accordionButtons[i] != elem) {
         if ($(accordionButtons[i]).attr("aria-expanded") == "true") {
           $(accordionButtons[i]).attr("aria-expanded", "false");
-          content = $(accordionButtons[i]).attr("aria-controls");
+          var content = $(accordionButtons[i]).attr("aria-controls");
           $("#" + content).attr("aria-hidden", "true");
           $("#" + content).toggleClass("h-auto");
           $(accordionButtons[i])
@@ -135,5 +135,18 @@ $(document).ready(function () {
   });
 
   /* Slider Inputs */
-  $(".slider_input").slider();
+  $("#slider").slider({
+    value: 3,
+    min: 1,
+    max: 5,
+    step: 1,
+    slide: function (event, ui) {
+      $("#amount").val(ui.value);
+      $("#slider").find(".ui-slider-handle").text(ui.value);
+    },
+    classes: {
+      "ui-slider-handle": "bg-mp-teal p-8",
+    },
+  });
+  $("#amount").val($("#slider").slider("value"));
 });

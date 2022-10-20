@@ -33,9 +33,23 @@
         </h1>
         <hr class="border-4 border-mp-azure w-12 mb-4" />
         <p class="text-dark-gray font-normal text-lg mb-4">
-          Here are some sliders.
+          How strongly do you agree or disagree with the following statements?
         </p>
-        <div class="slider_input"></div>
+        <form action="">
+          <div class="mb-4">
+            <p class="mb-4">
+              <label for="amount">Donation amount ($50 increments):</label>
+              <input
+                type="text"
+                id="amount"
+                readonly
+                class="font-bold text-mp-teal"
+              />
+            </p>
+
+            <div id="slider" class="md:w-3/4"></div>
+          </div>
+        </form>
       </div>
     </main>
   </body>
