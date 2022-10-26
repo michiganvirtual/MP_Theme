@@ -35,20 +35,52 @@
         <p class="text-dark-gray font-normal text-lg mb-4">
           How strongly do you agree or disagree with the following statements?
         </p>
-        <form action="">
-          <div class="mb-4">
+        <p class="text-dark-gray font-normal text-lg mb-4">
+          (1=Strongly Disagree - 5=Strongly Agree)
+        </p>
+        <form action="" id="slider-feedback">
+          <div class="text-dark-gray font-bold text-lg mb-4">
             <p class="mb-4">
-              <label for="amount">Donation amount ($50 increments):</label>
-              <input
-                type="text"
-                id="amount"
-                readonly
-                class="font-bold text-mp-teal"
-              />
+              <label for="amount"
+                >1. Predictable: Students have a clear understanding of
+                expectations when they walk into your classroom.
+              </label>
             </p>
-
-            <div id="slider" class="md:w-3/4"></div>
+            <div id="slider" class="slider md:w-3/4">
+              <div id="" class="ui-slider-handle custom-handle"></div>
+            </div>
           </div>
+          <div class="text-dark-gray font-bold text-lg mb-4">
+            <p class="mb-4">
+              <label for="amount"
+                >2. Routine: Students transition quickly to new tasks and/or
+                environments.
+              </label>
+            </p>
+            <div id="slider" class="slider md:w-3/4">
+              <div id="" class="ui-slider-handle custom-handle"></div>
+            </div>
+          </div>
+          <div class="text-dark-gray font-bold text-lg mb-4">
+            <p class="mb-4">
+              <label for="amount"
+                >3. Consistent: Students have multiple and varied opportunities
+                to practice self-awareness throughout the day.
+              </label>
+            </p>
+            <div id="slider" class="slider md:w-3/4">
+              <div id="" class="ui-slider-handle custom-handle"></div>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="inline-block bg-ada-orange hover:bg-dark-gray text-white font-bold py-4 px-6 rounded-md"
+          >
+            Submit
+          </button>
+          <h3 class="text-2xl text-dark-teal font-bold invisible validation">
+            Thank you for submitting your feedback!
+          </h3>
         </form>
       </div>
     </main>

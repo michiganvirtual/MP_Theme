@@ -1,7 +1,7 @@
 const { event } = require("jquery");
 const $ = require("jquery");
 require("jquery-ui");
-import "jquery-ui/themes/base/all.css";
+//import "jquery-ui/themes/base/all.css";
 require("jquery-ui/ui/widgets/draggable");
 require("jquery-ui/ui/widgets/droppable");
 require("jquery-ui/ui/widgets/slider");
@@ -135,18 +135,37 @@ $(document).ready(function () {
   });
 
   /* Slider Inputs */
-  $("#slider").slider({
+
+  $(".slider").slider({
     value: 3,
     min: 1,
     max: 5,
-    step: 1,
-    slide: function (event, ui) {
-      $("#amount").val(ui.value);
-      $("#slider").find(".ui-slider-handle").text(ui.value);
-    },
+    animate: true,
     classes: {
-      "ui-slider-handle": "bg-mp-teal p-8",
+      "ui-slider-handle":
+        "flex justify-center items-center bg-mp-teal text-white font-bold rounded-md",
+      "ui-slider-horizontal": "bg-mp-azure ",
+    },
+    create: function () {
+      var sliderHandle = $(this).children(".custom-handle");
+      sliderHandle.text($(this).slider("value"));
+    },
+    slide: function (event, ui) {
+      ui.handle.innerHTML = ui.value;
     },
   });
-  $("#amount").val($("#slider").slider("value"));
+  $("#slider-feedback").submit(function (e) {
+    e.preventDefault();
+    console.log("submitted");
+    $(this).children("button").hide();
+    $("h3.validation").removeClass("invisible");
+    $(".slider").each(function () {
+      $(this).removeClass("bg-mp-azure").addClass("bg-gray-200");
+      $(this)
+        .children(".ui-slider-handle")
+        .removeClass("bg-mp-teal text-white")
+        .addClass("bg-gray-300 text-gray-200");
+      $(this).slider("disable");
+    });
+  });
 });
