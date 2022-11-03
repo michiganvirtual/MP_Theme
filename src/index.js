@@ -156,7 +156,6 @@ $(document).ready(function () {
   });
   $("#slider-feedback").submit(function (e) {
     e.preventDefault();
-    console.log("submitted");
     $(this).children("button").hide();
     $("h3.validation").removeClass("invisible");
     $(".slider").each(function () {
@@ -167,5 +166,12 @@ $(document).ready(function () {
         .addClass("bg-gray-300 text-gray-200");
       $(this).slider("disable");
     });
+  });
+  $("#radio-button-feedback").submit(function (e) {
+    e.preventDefault();
+    $(this).children("button").hide();
+    $("h3.validation").removeClass("invisible");
+    $(this).find("input[type='radio']").attr("disabled", true);
+    $(this).find("label").addClass("text-gray-400");
   });
 });
