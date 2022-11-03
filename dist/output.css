@@ -1085,16 +1085,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .ml-8 {
@@ -1442,6 +1442,16 @@ video {
   background-color: rgb(214 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-ada-orange {
   --tw-bg-opacity: 1;
   background-color: rgb(172 102 16 / var(--tw-bg-opacity));
@@ -1465,26 +1475,6 @@ video {
 .bg-dark-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(65 64 66 / var(--tw-bg-opacity));
-}
-
-.bg-light-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(109 110 113 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fcfcfc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1683,6 +1673,11 @@ video {
   color: rgb(9 60 68 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 .text-mp-teal {
   --tw-text-opacity: 1;
   color: rgb(71 150 170 / var(--tw-text-opacity));
@@ -1701,26 +1696,6 @@ video {
 .text-light-teal {
   --tw-text-opacity: 1;
   color: rgb(47 141 152 / var(--tw-text-opacity));
-}
-
-.text-\[\#fefefe\] {
-  --tw-text-opacity: 1;
-  color: rgb(254 254 254 / var(--tw-text-opacity));
-}
-
-.text-\[\#ececec\] {
-  --tw-text-opacity: 1;
-  color: rgb(236 236 236 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1852,6 +1827,10 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:p-0 {

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="block w-full overflow-x-hidden">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      rel="icon"
+      href="https://michiganvirtual.org/wp-content/uploads/2021/10/cropped-mv-favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <script defer src="../main.js"></script>
+  </head>
+  <body class="font-body w-full overflow-x-hidden">
+    <header
+      class="flex justify-center bg-gradient-to-r from-mp-teal to-mp-blue"
+    >
+      <div class="text-white container p-12 mx-auto">
+        <span>Mindful Practices: Course 2</span><br />
+        <span class="text-lg md:text-xl font-body font-extrabold">
+          Introduction to SEL
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="container mx-auto px-4 lg:px-24 py-12">
+        <h1
+          class="text-4xl font-bold text-mp-teal tracking-tighter uppercase md:mt-6 mb-4"
+        >
+          Sliders
+        </h1>
+        <hr class="border-4 border-mp-azure w-12 mb-4" />
+        <p class="text-dark-gray font-normal text-lg mb-4">
+          How strongly do you agree or disagree with the following statements?
+        </p>
+        <p class="text-dark-gray font-normal text-lg mb-4">
+          (1=Strongly Disagree - 5=Strongly Agree)
+        </p>
+        <form action="" id="slider-feedback">
+          <div class="text-dark-gray font-bold text-lg mb-4">
+            <p class="mb-4">
+              1. Predictable: Students have a clear understanding of
+              expectations when they walk into your classroom.
+            </p>
+            <div class="flex flex-col md:flex-row justify-between">
+              <label for="strong-dis-1" class="mr-2">
+                <input type="radio" id="strong-dis-1" name="feedback-1" />
+                Strongly Disagree
+              </label>
+              <label for="disagree-1" class="mr-2">
+                <input type="radio" id="disagree-1" name="feedback-1" />
+                Disagree
+              </label>
+              <label for="neutral-1" class="mr-2">
+                <input type="radio" id="neutral-1" name="feedback-1" />
+                Neutral
+              </label>
+              <label for="agree-1" class="mr-2">
+                <input type="radio" id="agree-1" name="feedback-1" />
+                Agree
+              </label>
+              <label for="strong-agree-1" class="mr-2">
+                <input type="radio" id="strong-agree-1" name="feedback-1" />
+                Strongly Agree
+              </label>
+            </div>
+          </div>
+          <div class="text-dark-gray font-bold text-lg mb-4">
+            <p class="mb-4">
+              2. Routine: Students transition quickly to new tasks and/or
+              environments.
+            </p>
+            <div class="flex flex-col md:flex-row justify-between">
+              <label for="strong-dis-2" class="mr-2">
+                <input type="radio" id="strong-dis-2" name="feedback-2" />
+                Strongly Disagree
+              </label>
+              <label for="disagree-2" class="mr-2">
+                <input type="radio" id="disagree-2" name="feedback-2" />
+                Disagree
+              </label>
+              <label for="neutral-2" class="mr-2">
+                <input type="radio" id="neutral-2" name="feedback-2" />
+                Neutral
+              </label>
+              <label for="agree-2" class="mr-2">
+                <input type="radio" id="agree-2" name="feedback-2" />
+                Agree
+              </label>
+              <label for="strong-agree-2" class="mr-2">
+                <input type="radio" id="strong-agree-2" name="feedback-2" />
+                Strongly Agree
+              </label>
+            </div>
+          </div>
+          <div class="text-dark-gray font-bold text-lg mb-4">
+            <p class="mb-4">
+              3. Consistent: Students have multiple and varied opportunities to
+              practice self-awareness throughout the day.
+            </p>
+            <div class="flex flex-col md:flex-row justify-between">
+              <label for="strong-dis-3" class="mr-2">
+                <input type="radio" id="strong-dis-3" name="feedback-3" />
+                Strongly Disagree
+              </label>
+              <label for="disagree-3" class="mr-2">
+                <input type="radio" id="disagree-3" name="feedback-3" />
+                Disagree
+              </label>
+              <label for="neutral-3" class="mr-2">
+                <input type="radio" id="neutral-3" name="feedback-3" />
+                Neutral
+              </label>
+              <label for="agree-3" class="mr-2">
+                <input type="radio" id="agree-3" name="feedback-3" />
+                Agree
+              </label>
+              <label for="strong-agree-3" class="mr-2">
+                <input type="radio" id="strong-agree-3" name="feedback-3" />
+                Strongly Agree
+              </label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="inline-block bg-ada-orange hover:bg-dark-gray text-white font-bold py-4 px-6 rounded-md"
+          >
+            Submit
+          </button>
+          <h3 class="text-2xl text-dark-teal font-bold invisible validation">
+            Thank you for submitting your feedback!
+          </h3>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
