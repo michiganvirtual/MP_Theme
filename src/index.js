@@ -105,7 +105,6 @@ $(document).ready(function () {
       rightCount++;
 
       if (rightCount == 11) {
-        console.log("run it");
         $(".examples").addClass("hidden");
         $(".feedback")
           .removeClass("invisible text-xl text-red-500")
@@ -176,9 +175,8 @@ $(document).ready(function () {
   });
 
   /***** Socratic Reflection Updates *****/
-  $("button#save").text("Submit");
-  $("#save").addClass(
-    "block py-4 px-6 uppercase font-bold bg-white text-mp-blue rounded-md"
-  );
-  console.log($("button#save"));
+});
+
+$(window).load(function () {
+  console.log("test");
 });
