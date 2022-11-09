@@ -360,17 +360,32 @@ ul li::before {
 
 /* Socratic Reflection */
 #save {
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   border: 2px solid #ffffff;
   color: #ffffff;
   font-weight: 700;
   padding: 1rem 1.5rem;
   border-radius: 0.375rem;
+  margin-right: 10px;
 }
 #save:hover {
   background-color: #ffffff;
   color: #14a0c6;
+}
+#restore {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 0.375rem;
+  margin-right: 10px;
+}
+#unsaved {
+  font-weight: 700;
+  color: #ffffff;
 }
 #text_input {
   padding: 1rem;
