@@ -502,6 +502,7 @@ ul li::before {
   color: #ffffff;
   font-weight: 700;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #restore:hover {
