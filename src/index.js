@@ -176,7 +176,3 @@ $(document).ready(function () {
 
   /***** Socratic Reflection Updates *****/
 });
-
-$(window).load(function () {
-  console.log("test");
-});

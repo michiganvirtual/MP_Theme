@@ -358,6 +358,24 @@ ul li::before {
   top: 0;
 }
 
+/* Socratic Reflection */
+#save {
+  display: block;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 0.375rem;
+}
+#save:hover {
+  background-color: #ffffff;
+  color: #14a0c6;
+}
+#text_input {
+  padding: 1rem;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
