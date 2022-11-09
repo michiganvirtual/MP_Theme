@@ -49,20 +49,53 @@
         <a
           href="https://leadingwithsel.org/take-the-quiz/"
           target="_blank"
-          class="block bg-mp-teal hover:bg-mp-blue w-full py-6 text-white text-center rounded-md font-bold text-xl"
+          class="inline-block bg-mp-teal hover:bg-mp-blue p-6 text-white text-center rounded-md font-bold text-xl"
           rel="noopener"
           >Take the Quiz</a
         >
         <br /><br />
-        <p class="text-dark-gray font-normal text-lg mb-4">
-          What was your biggest takeaway from the social emotional learning
-          quiz? How do you think SEL could help the students you serve?
-        </p>
-        <div id="questionTool"></div>
+        <div class="container mx-auto px-4 lg:px-24 py-1">
+          <div class="grid grid-cols-1 lg:grid-cols-1 gap-4 items-center">
+            <div
+              class="flex flex-col min-h-full justify-evenly rounded-md bg-mp-teal text-white font-bold text-2xl p-8 mb-4 w-full"
+            >
+              <div class="flex justify-between items-center w-full mb-6">
+                <h3 class="w-3/4">Reflect</h3>
+                <img
+                  src="/d2l/common/viewFile.d2lfile/Content/L2NvbnRlbnQvZW5mb3JjZWQvMTAzOTQtTUlORFBSLURFVi9pbWFnZXMvaWNvbnM4LXRoaW5rLnBuZw/icons8-think.png?ou=10394"
+                  alt="thinking bubble"
+                  width="75px"
+                  height="75px"
+                />
+              </div>
+              <p class="text-lg text-white font-normal">
+                In the response box below, tell us:
+              </p>
+              <ul class="text-lg text-white font-normal mb-4 ml-8 list-disc">
+                <li class="mb-2">
+                  What was your biggest takeaway from the social-emotional
+                  learning quiz?
+                </li>
+                <li class="mb-2">
+                  How do you think SEL could help the students you serve?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-mp-teal p-4 rounded-md" id="questionTool"></div>
+        <div class="bg-mp-teal p-4 rounded-md">
+          <input type="text" class="w-full h-48 p-4 mb-4" name="" id="" />
+          <button
+            class="block py-4 px-6 uppercase font-bold bg-white text-mp-blue rounded-md"
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </main>
     <!-- Socratic Questioning Tool -->
-    <p class="border-2 border-mp-teal">
+    <p>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="/shared/custom_widgets/d2l/assets/third_party/valence/libVal.min.js"></script>
       <script src="/shared/custom_widgets/d2l/widgets/socratic_questioning/js/main.min.js"></script>

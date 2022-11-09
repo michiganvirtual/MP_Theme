@@ -174,4 +174,10 @@ $(document).ready(function () {
     $(this).find("input[type='radio']").attr("disabled", true);
     $(this).find("label").addClass("text-gray-400");
   });
+
+  /***** Socratic Reflection Updates *****/
+  $("#save").text("Submit");
+  $("#save").addClass(
+    "block py-4 px-6 uppercase font-bold bg-white text-mp-blue rounded-md"
+  );
 });
