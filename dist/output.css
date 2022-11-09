@@ -488,6 +488,7 @@ ul li::before {
   padding: 1rem 1.5rem;
   border-radius: 0.375rem;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #save:hover {
@@ -498,12 +499,13 @@ ul li::before {
 #restore {
   display: inline-block;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
   color: #ffffff;
   font-weight: 700;
-  padding: 1rem 1.5rem;
-  border-radius: 0.375rem;
   margin-right: 10px;
+}
+
+#restore:hover {
+  text-decoration: underline;
 }
 
 #unsaved {
