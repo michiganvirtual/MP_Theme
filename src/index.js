@@ -176,8 +176,9 @@ $(document).ready(function () {
   });
 
   /***** Socratic Reflection Updates *****/
-  $("#save").text("Submit");
+  $("button#save").text("Submit");
   $("#save").addClass(
     "block py-4 px-6 uppercase font-bold bg-white text-mp-blue rounded-md"
   );
+  console.log($("button#save"));
 });
