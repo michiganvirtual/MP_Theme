@@ -189,9 +189,9 @@ SocraticTool.updateForm = function (data) {
     save.click(function () {
       $(this).attr("disabled", true);
       $(this).text("Submitting...");
-      unsaved.show().text("Thank You For Submitting!");
       SocraticTool.response = $("#text_input").val().replace(/"/gi, '\\"');
       SocraticTool.saveResponse();
+      unsaved.show().text("Thank You For Submitting!");
     });
 
     restore.text("Use Unsubmitted Response");
