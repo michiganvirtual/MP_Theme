@@ -362,7 +362,7 @@ ul li::before {
 #save {
   display: inline-block;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
+  background: #fd6000;
   color: #ffffff;
   font-weight: 700;
   padding: 1rem 1.5rem;
@@ -388,6 +388,7 @@ ul li::before {
 #unsaved {
   font-weight: 700;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 #text_input {
   padding: 1rem;
