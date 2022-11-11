@@ -499,6 +499,8 @@ ul li::before {
 
 #save:disabled {
   background-color: #ebebe4;
+  color: #6d6e71;
+  cursor: not-allowed;
 }
 
 #restore {
