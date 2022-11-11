@@ -482,7 +482,7 @@ ul li::before {
 #save {
   display: inline-block;
   text-transform: uppercase;
-  background: #fd6000;
+  background-color: #fd6000;
   color: #ffffff;
   font-weight: 700;
   padding: 1rem 1.5rem;
@@ -495,6 +495,10 @@ ul li::before {
   cursor: pointer;
   background-color: #ffffff;
   color: #14a0c6;
+}
+
+#save:disabled {
+  background-color: #ebebe4;
 }
 
 #restore {
