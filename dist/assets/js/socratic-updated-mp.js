@@ -423,7 +423,7 @@ SocraticTool.saveResponse = function () {
 
 SocraticTool.savedResponse = function (w) {
   // $('#save').attr('disabled', false);
-  $("#save").text("Save");
+  $("#save").text("Submit");
 
   $("#unsaved").hide();
   $("#restore").remove();
