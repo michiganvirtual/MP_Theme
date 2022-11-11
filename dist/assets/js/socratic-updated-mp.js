@@ -426,6 +426,7 @@ SocraticTool.savedResponse = function (w) {
   $("#save").text("Submit");
 
   $("#unsaved").hide();
+  $("#unsaved").show().text("Thank You For Submitting!");
   $("#restore").remove();
 
   delete localStorage["topic" + SocraticTool.topicID];
