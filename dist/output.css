@@ -524,6 +524,7 @@ ul li::before {
 
 #text_input {
   padding: 1rem;
+  margin-bottom: 20px;
 }
 
 /* ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com */
