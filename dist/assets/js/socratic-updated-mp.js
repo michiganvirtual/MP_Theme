@@ -188,6 +188,7 @@ SocraticTool.updateForm = function (data) {
     save.text("Submit");
     save.click(function () {
       $(this).attr("disabled", true);
+      $(this).addClass("bg-gray-500");
       $(this).text("Submitting...");
 
       SocraticTool.response = $("#text_input").val().replace(/"/gi, '\\"');

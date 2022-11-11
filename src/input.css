@@ -371,6 +371,7 @@ ul li::before {
   margin-bottom: 10px;
 }
 #save:hover {
+  cursor: pointer;
   background-color: #ffffff;
   color: #14a0c6;
 }

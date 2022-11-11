@@ -492,6 +492,7 @@ ul li::before {
 }
 
 #save:hover {
+  cursor: pointer;
   background-color: #ffffff;
   color: #14a0c6;
 }
