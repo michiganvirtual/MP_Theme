@@ -101,7 +101,7 @@ $(document).ready(function () {
         .css("position", "initial")
         .css("display", "inline-block")
         .removeClass("bg-deep-teal")
-        .addClass("bg-light-teal");
+        .addClass("bg-mp-blue");
       rightCount++;
 
       if (rightCount == 11) {
@@ -113,14 +113,12 @@ $(document).ready(function () {
             "Nice job! You have correctly identified the medication with the route of administration!"
           );
       }
+      $(".examples span:first-child").removeClass("hidden");
     },
   });
-  $("#oral").droppable({ accept: "span.oral" });
-  $("#topical").droppable({ accept: "span.topical" });
-  $("#inhalant").droppable({ accept: "span.inhalant" });
-  $("#injectable").droppable({
-    accept: "span.injectable",
-  });
+
+  $("#sel").droppable({ accept: "span.sel" });
+  $("#classroom-management").droppable({ accept: "span.classroom-management" });
 
   /*    Food Allergens Participation Exercise     */
   $(".food-allergens__form").on("submit", function (e) {

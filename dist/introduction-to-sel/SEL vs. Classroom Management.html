@@ -40,18 +40,47 @@
           tiles by dragging and dropping each tile to its appropriate column.
           Can you get the correct three in each column?
         </p>
-        <div class="flex justify-center mb-4">
-          <iframe
-            src="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=10394&amp;type=lti&amp;rCode=michiganvirtual-48459"
-            title="MP Intro to SEL-SEL vs. Classroom Management"
-            allowfullscreen=""
-            allow="microphone *; camera *; autoplay *"
-            height="600"
-            width="779"
-            style="height: 568px; width: 100%"
-          ></iframe>
-        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 min-h-[400px]">
+          <div
+            class="flex flex-col justify-center col-span-2 md:col-span-1 text-center font-bold text-lg text-white draggable examples"
+          >
+            
+          <span class="inline-block p-4 m-2 bg-mp-teal sel"
+            >Encourage awareness of self</span
+          ><span class="inline-block p-4 m-2 bg-mp-teal hidden classroom-management"
+            >Incentives for behavior (token economy)</span
+          ><span class="inline-block p-4 m-2 bg-mp-teal hidden classroom-management"
+            >Operations (detention, seating chart)</span
+          ><span class="inline-block p-4 m-2 bg-mp-teal hidden sel"
+            >Cool down corner or relaxation station</span
+          ><span class="inline-block p-4 m-2 bg-mp-teal hidden sel"
+            >Another SEL example</span
+          ><span class="inline-block p-4 m-2 bg-mp-teal hidden classroom-management"
+            >Another Classroom Management example</span
+          >
+          </div>
+          <div
+            class="min-h-96 border-dashed border-dark-gray border-2 py-2"
+          >
+            <h3 class="text-center text-xl text-mp-teal uppercase font-bold">
+              SEL
+            </h3>
+            <p class="text-center text-lg text-dark-gray">(students manage themselves)</p>
+            <div id="sel" class="flex flex-col min-h-full text-center font-bold text-lg text-white droppable"></div>
+          </div>
+          <div
+          class="min-h-96 border-dashed border-dark-gray border-2 py-2"
+          >
+          <h3 class="text-center text-xl text-mp-teal uppercase font-bold">
+            Classroom Management
+          </h3>
+          <p class="text-center text-lg text-dark-gray">(students manage themselves)</p>
+            <div id="classroom-management" class="flex flex-col min-h-full text-center font-bold text-lg text-white droppable"></div>
+          </div>
+          
       </div>
+      <h2 clas></h2>
     </main>
   </body>
 </html>

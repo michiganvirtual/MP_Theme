@@ -25,6 +25,7 @@ module.exports = {
         "mp-teal": "#4796AA",
         "mp-blue": "#14A0C6",
         "mp-azure": "#D6E7EB",
+        "mp-orange": "#fd6000",
       },
     },
   },
