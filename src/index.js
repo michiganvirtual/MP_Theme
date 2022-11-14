@@ -5,8 +5,27 @@ require("jquery-ui");
 require("jquery-ui/ui/widgets/draggable");
 require("jquery-ui/ui/widgets/droppable");
 require("jquery-ui/ui/widgets/slider");
+require("./touch-punch");
 
 $(document).ready(function () {
+  var bsContainer = false;
+  var bsStyles = {
+    "max-width": "1230px",
+    margin: "0 auto",
+    padding: "0 30px",
+  };
+  var bsMobileStyles = {
+    padding: "0 54px",
+  };
+
+  if (bsContainer) {
+    $("body").css(bsStyles);
+    if (screen.width < 930) {
+      console.log("little screen");
+      $("body").css(bsMobileStyles);
+    }
+  }
+
   $(".flip-card").attr("tabindex", "0");
   $(".flip-card").keypress(function (e) {
     e.preventDefault();
@@ -79,6 +98,11 @@ $(document).ready(function () {
   /* Drag & Drop Activity */
   var wrongCount = 0;
   var rightCount = 0;
+  var answerCount = $("#answer-count")[0];
+  var totalExamples = $(".draggable span").length;
+  var examplesRemaining = totalExamples;
+
+  $("#answer-count")[0].innerHTML = totalExamples;
 
   $(".draggable span").draggable({
     revert: function (droppableContainer) {
@@ -102,23 +126,39 @@ $(document).ready(function () {
         .css("display", "inline-block")
         .removeClass("bg-deep-teal")
         .addClass("bg-mp-blue");
-      rightCount++;
+      //rightCount++;
+      //console.log($(this)[0].id);
+      //console.log(ui.draggable[0].getAttribute("data-answer"));
 
-      if (rightCount == 11) {
-        $(".examples").addClass("hidden");
-        $(".feedback")
-          .removeClass("invisible text-xl text-red-500")
-          .addClass("text-deep-teal text-2xl")
-          .text(
-            "Nice job! You have correctly identified the medication with the route of administration!"
-          );
+      if ($(this)[0].id == ui.draggable[0].getAttribute("data-answer")) {
+        rightCount++;
+      } else {
+        ui.draggable.addClass("wrong-answer");
       }
+
       $(".examples span:first-child").removeClass("hidden");
+      examplesRemaining--;
+      answerCount.innerHTML = examplesRemaining;
+
+      if (examplesRemaining === 0) {
+        $("#total-answers").addClass("hidden");
+        $("#check-answers").removeClass("hidden");
+      }
     },
   });
 
-  $("#sel").droppable({ accept: "span.sel" });
-  $("#classroom-management").droppable({ accept: "span.classroom-management" });
+  $("#check-answers").on("click", function (e) {
+    e.preventDefault();
+    console.log(rightCount);
+    $(this).addClass("hidden");
+    $("#total-answers").removeClass("hidden");
+    $("#total-answers")[0].innerHTML =
+      "Correct Answers: " + rightCount + "/" + totalExamples;
+    $("span.wrong-answer").css("background-color", "red");
+  });
+
+  //$("#sel").droppable({ accept: "span.sel" });
+  //$("#classroom-management").droppable({ accept: "span.classroom-management" });
 
   /*    Food Allergens Participation Exercise     */
   $(".food-allergens__form").on("submit", function (e) {

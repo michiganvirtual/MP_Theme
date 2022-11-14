@@ -1272,6 +1272,10 @@ video {
   min-height: 400px;
 }
 
+.min-h-\[800px\] {
+  min-height: 800px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1579,6 +1583,11 @@ video {
 .bg-dark-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(65 64 66 / var(--tw-bg-opacity));
+}
+
+.bg-mp-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 96 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1956,6 +1965,10 @@ video {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:min-h-\[400px\] {
+    min-height: 400px;
   }
 
   .md\:w-3\/4 {
