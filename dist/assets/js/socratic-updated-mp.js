@@ -191,7 +191,7 @@ SocraticTool.updateForm = function (data) {
       $(this).text("Submitting...");
       SocraticTool.response = $("#text_input").val().replace(/"/gi, '\\"');
       SocraticTool.saveResponse();
-      unsaved.show().text("Thank You For Submitting!");
+      unsaved.show().text("Thank you for submitting!");
     });
 
     restore.text("Use Unsubmitted Response");
@@ -235,7 +235,7 @@ SocraticTool.updateForm = function (data) {
       input.on("keyup", function (e) {
         if (SocraticTool.detectChanges() === true) {
           $("#save").attr("disabled", false);
-          $("#unsaved").show();
+          $("#unsaved").show().text("Unsubmitted response");
         } else {
           $("#save").attr("disabled", true);
           $("#unsaved").hide();
