@@ -120,45 +120,67 @@ $(document).ready(function () {
 
   $(".droppable").droppable({
     drop: function (event, ui) {
-      ui.draggable.detach().appendTo($(this));
+      ui.draggable.detach().appendTo($(this).children("div"));
       ui.draggable
         .css("position", "initial")
         .css("display", "inline-block")
         .removeClass("bg-deep-teal")
         .addClass("bg-mp-blue");
-      //rightCount++;
-      //console.log($(this)[0].id);
-      //console.log(ui.draggable[0].getAttribute("data-answer"));
 
       if ($(this)[0].id == ui.draggable[0].getAttribute("data-answer")) {
         rightCount++;
       } else {
         ui.draggable.addClass("wrong-answer");
       }
-
       $(".examples span:first-child").removeClass("hidden");
       examplesRemaining--;
+      console.log(examplesRemaining);
       answerCount.innerHTML = examplesRemaining;
 
       if (examplesRemaining === 0) {
-        $("#total-answers").addClass("hidden");
-        $("#check-answers").removeClass("hidden");
+        $("#check-answers").removeClass("hidden invisible");
       }
     },
   });
 
-  $("#check-answers").on("click", function (e) {
+  //Retry Function
+  $("#retry").on("click", function (e) {
     e.preventDefault();
-    console.log(rightCount);
-    $(this).addClass("hidden");
-    $("#total-answers").removeClass("hidden");
+    $(".droppable")
+      .find("span.ui-draggable")
+      .detach()
+      .appendTo($(".draggable.examples")[0]);
     $("#total-answers")[0].innerHTML =
-      "Correct Answers: " + rightCount + "/" + totalExamples;
-    $("span.wrong-answer").css("background-color", "red");
+      'Examples Remaining: <span id="answer-count"></span>';
+    answerCount = $("#answer-count")[0];
+    totalExamples = $(".draggable span").length;
+    examplesRemaining = totalExamples;
+    rightCount = 0;
+    $("#answer-count")[0].innerHTML = totalExamples;
+    $(".examples span")
+      .css({
+        display: "",
+        position: "relative",
+        left: "",
+        top: "",
+      })
+      .removeClass("wrong-answer bg-red-500 bg-mp-blue")
+      .addClass("hidden bg-mp-teal");
+    $(".examples span:first-child").removeClass("hidden");
+    $(this).addClass("invisible");
   });
 
-  //$("#sel").droppable({ accept: "span.sel" });
-  //$("#classroom-management").droppable({ accept: "span.classroom-management" });
+  //Check Answer function
+  $("#check-answers").on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass("hidden");
+    if (rightCount < totalExamples) {
+      $("#retry").removeClass("invisible hidden");
+    }
+    $("#total-answers")[0].innerHTML =
+      "Correct Answers: " + rightCount + "/" + totalExamples;
+    $("span.wrong-answer").addClass("bg-red-500");
+  });
 
   /*    Food Allergens Participation Exercise     */
   $(".food-allergens__form").on("submit", function (e) {

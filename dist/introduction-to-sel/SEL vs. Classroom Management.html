@@ -47,13 +47,19 @@
         <a
           href="#"
           id="check-answers"
-          class="inline-block bg-mp-orange text-white font-bold px-8 py-4 mb-4 hidden"
+          class="inline-block bg-mp-orange text-white font-bold px-8 py-4 mb-4 rounded-md hover:bg-mp-blue invisible"
           >Check Answers</a
+        >
+        <a
+          href="#"
+          id="retry"
+          class="inline-block bg-mp-orange text-white font-bold px-8 py-4 mb-4 rounded-md hover:bg-mp-blue invisible"
+          >Retry</a
         >
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
           <div
-            class="flex flex-col justify-center col-span-2 md:col-span-1 text-center font-bold text-lg text-white draggable examples"
+            class="flex flex-col col-span-2 md:col-span-1 text-center font-bold text-lg text-white draggable examples"
           >
             <span class="inline-block p-4 m-2 bg-mp-teal" data-answer="sel"
               >Encourage awareness of self</span
@@ -80,7 +86,8 @@
             >
           </div>
           <div
-            class="border-dashed border-dark-gray border-2 py-2 min-h-[600px] md:min-h-[400px]"
+            id="sel"
+            class="border-dashed border-dark-gray border-2 py-2 min-h-[600px] md:min-h-[400px] droppable"
           >
             <h3 class="text-center text-xl text-mp-teal uppercase font-bold">
               SEL
@@ -89,12 +96,12 @@
               (students manage themselves)
             </p>
             <div
-              id="sel"
-              class="flex flex-col min-h-full text-center font-bold text-lg text-white droppable"
+              class="flex flex-col min-h-full text-center font-bold text-lg text-white"
             ></div>
           </div>
           <div
-            class="border-dashed border-dark-gray border-2 py-2 min-h-[600px] md:min-h-[400px]"
+            id="classroom-management"
+            class="border-dashed border-dark-gray border-2 py-2 min-h-[600px] md:min-h-[400px] droppable"
           >
             <h3 class="text-center text-xl text-mp-teal uppercase font-bold">
               Classroom Management
@@ -103,8 +110,7 @@
               (students manage themselves)
             </p>
             <div
-              id="classroom-management"
-              class="flex flex-col min-h-full text-center font-bold text-lg text-white droppable"
+              class="flex flex-col min-h-full text-center font-bold text-lg text-white"
             ></div>
           </div>
         </div>
