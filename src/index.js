@@ -100,12 +100,12 @@ $(document).ready(function () {
   var wrongCount = 0;
   var rightCount = 0;
   var answerCount = $("#answer-count")[0];
-  var totalExamples = $(".draggable span").length;
+  var totalExamples = $(".draggable>span").length;
   var examplesRemaining = totalExamples;
 
   $("#answer-count")[0].innerHTML = totalExamples;
 
-  $(".draggable span").draggable({
+  $(".draggable>span").draggable({
     revert: function (droppableContainer) {
       if (!droppableContainer) {
         if (wrongCount < 3) {
@@ -130,6 +130,7 @@ $(document).ready(function () {
 
       if ($(this)[0].id == ui.draggable[0].getAttribute("data-answer")) {
         rightCount++;
+        ui.draggable.addClass("right-answer");
       } else {
         ui.draggable.addClass("wrong-answer");
       }
@@ -154,19 +155,23 @@ $(document).ready(function () {
     $("#total-answers")[0].innerHTML =
       'Examples Remaining: <span id="answer-count"></span>';
     answerCount = $("#answer-count")[0];
-    totalExamples = $(".draggable span").length;
+    totalExamples = $(".draggable>span").length;
     examplesRemaining = totalExamples;
     rightCount = 0;
     $("#answer-count")[0].innerHTML = totalExamples;
-    $(".examples span")
+    $(".examples>span")
       .css({
         display: "",
         position: "relative",
         left: "",
         top: "",
       })
-      .removeClass("wrong-answer bg-red-500 bg-mp-blue")
+      .removeClass("wrong-answer right-answer bg-red-500 bg-mp-blue ")
       .addClass("hidden bg-mp-teal");
+    $(".examples>span>span").removeClass("line-through");
+    $(".examples>span>i")
+      .removeClass("fa-times fa-check mr-8")
+      .addClass("hidden");
     $(".examples span:first-child").removeClass("hidden");
     $(this).addClass("invisible");
   });
@@ -174,13 +179,18 @@ $(document).ready(function () {
   //Check Answer function
   $("#check-answers").on("click", function (e) {
     e.preventDefault();
+
     $(this).addClass("hidden");
     if (rightCount < totalExamples) {
       $("#retry").removeClass("invisible hidden");
     }
     $("#total-answers")[0].innerHTML =
       "Correct Answers: " + rightCount + "/" + totalExamples;
-    $("span.wrong-answer").addClass("bg-red-500");
+    $("span.wrong-answer").addClass("bg-red-500").css("display", "");
+    $("span.wrong-answer>span").addClass("line-through");
+    $("span.wrong-answer i").addClass("fa-times mr-8").removeClass("hidden");
+    $("span.right-answer").addClass("bg-green-700").css("display", "");
+    $("span.right-answer i").addClass("fa-check mr-8").removeClass("hidden");
   });
 
   /*    Food Allergens Participation Exercise     */
