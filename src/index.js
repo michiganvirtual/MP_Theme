@@ -33,6 +33,7 @@ $(document).ready(function () {
   });
 
   var accordionButtons = $(".accordion-controls li a");
+  accordionButtons.attr("tabindex", "0");
 
   $(".accordion-controls li a").on("click", function (e) {
     var $control = $(this);
