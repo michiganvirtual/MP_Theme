@@ -127,6 +127,7 @@ $(document).ready(function () {
         .css("display", "inline-block")
         .removeClass("bg-deep-teal")
         .addClass("bg-mp-blue");
+      ui.draggable.draggable({ disabled: true });
 
       if ($(this)[0].id == ui.draggable[0].getAttribute("data-answer")) {
         rightCount++;
@@ -176,6 +177,7 @@ $(document).ready(function () {
       .addClass("hidden");
     $(".examples span:first-child").removeClass("hidden");
     $(this).addClass("invisible");
+    $(".draggable>span").draggable({ disabled: false });
   });
 
   //Check Answer function
