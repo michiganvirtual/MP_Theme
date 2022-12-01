@@ -166,7 +166,9 @@ $(document).ready(function () {
         left: "",
         top: "",
       })
-      .removeClass("wrong-answer right-answer bg-red-500 bg-mp-blue ")
+      .removeClass(
+        "wrong-answer right-answer bg-red-500 bg-green-700 bg-mp-blue "
+      )
       .addClass("hidden bg-mp-teal");
     $(".examples>span>span").removeClass("line-through");
     $(".examples>span>i")
@@ -181,8 +183,8 @@ $(document).ready(function () {
     e.preventDefault();
 
     $(this).addClass("hidden");
+    $("#retry").removeClass("invisible hidden");
     if (rightCount < totalExamples) {
-      $("#retry").removeClass("invisible hidden");
     }
     $("#total-answers")[0].innerHTML =
       "Correct Answers: " + rightCount + "/" + totalExamples;
