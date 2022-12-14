@@ -279,6 +279,12 @@ ul li::before {
   transform: rotateY(180deg);
 }
 
+/* Drag and Drop styles */
+
+.draggable > span {
+  cursor: pointer;
+}
+
 /*Slider Styles*/
 /*!
  * jQuery UI Slider 1.13.2

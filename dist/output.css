@@ -386,6 +386,12 @@ ul li::before {
   transform: rotateY(180deg);
 }
 
+/* Drag and Drop styles */
+
+.draggable > span {
+  cursor: pointer;
+}
+
 /*Slider Styles*/
 
 /*!
