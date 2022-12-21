@@ -103,7 +103,9 @@ $(document).ready(function () {
   var totalExamples = $(".draggable>span").length;
   var examplesRemaining = totalExamples;
 
-  $("#answer-count")[0].innerHTML = totalExamples;
+  if ($("#answer-count").length) {
+    $("#answer-count")[0].innerHTML = totalExamples;
+  }
 
   $(".draggable>span").draggable({
     revert: function (droppableContainer) {
@@ -241,7 +243,8 @@ $(document).ready(function () {
       $(this).slider("disable");
     });
   });
-  $("#radio-button-feedback").submit(function (e) {
+
+  $("#radio-button-feedback").on("submit", function (e) {
     e.preventDefault();
     $(this).children("button").hide();
     $("h3.validation").removeClass("invisible");
