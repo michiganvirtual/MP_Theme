@@ -1710,6 +1710,10 @@ video {
   padding-left: 2rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1838,6 +1842,11 @@ video {
 .text-mp-blue {
   --tw-text-opacity: 1;
   color: rgb(20 160 198 / var(--tw-text-opacity));
+}
+
+.text-mp-azure {
+  --tw-text-opacity: 1;
+  color: rgb(214 231 235 / var(--tw-text-opacity));
 }
 
 .text-mp-orange {
