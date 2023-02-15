@@ -1589,6 +1589,11 @@ video {
   background-color: rgb(255 120 1 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#85BC16\] {
   --tw-bg-opacity: 1;
   background-color: rgb(133 188 22 / var(--tw-bg-opacity));
@@ -1597,11 +1602,6 @@ video {
 .bg-\[\#ffcc02\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 204 2 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1732,7 +1732,7 @@ video {
 }
 
 .font-body {
-  font-family: Martel Sans, Gotham, Roboto, Noto Sans, Helvetica, Calibri;
+  font-family: Martel Sans, Roboto, Noto Sans, Helvetica, Calibri;
 }
 
 .text-lg {
@@ -1915,6 +1915,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .duration-300 {

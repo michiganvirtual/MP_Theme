@@ -3,14 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: [
-          "Martel Sans",
-          "Gotham",
-          "Roboto",
-          "Noto Sans",
-          "Helvetica",
-          "Calibri",
-        ],
+        body: ["Martel Sans", "Roboto", "Noto Sans", "Helvetica", "Calibri"],
       },
       colors: {
         "deep-teal": "#093c44",
