@@ -73,6 +73,10 @@ $(document).ready(function () {
             .find("img.accordion__toggle")
             .toggleClass("rotate-180");
           $("#" + content).css("max-height", 0);
+          $(".video-container iframe").each(function () {
+            var el_src = $(this).attr("src");
+            $(this).attr("src", el_src);
+          });
         }
       }
     }
@@ -93,6 +97,10 @@ $(document).ready(function () {
 
       $(".tabs__content>div").addClass("hidden");
       $(".tabs__content>#" + t).removeClass("hidden");
+      $(".video-container iframe").each(function () {
+        var el_src = $(this).attr("src");
+        $(this).attr("src", el_src);
+      });
     }
   });
 
