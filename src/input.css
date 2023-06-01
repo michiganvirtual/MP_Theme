@@ -409,3 +409,7 @@ ul li::before {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-mp-teal {
+  @apply font-bold;
+}

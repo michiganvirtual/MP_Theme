@@ -26,12 +26,24 @@ $(document).ready(function () {
     }
   }
 
+  if ($("h1").length) {
+    $("h1")[0].setAttribute("aria-hidden", true);
+  }
+
   $(".flip-card").attr("tabindex", "0");
   $(".flip-card").keypress(function (e) {
     e.preventDefault();
     $(this).children(".flip-card-inner").toggleClass("flipped");
   });
 
+  if ($(".accordion-controls li a").length) {
+    for (var i = 0; i < $(".accordion-controls").length; i++) {
+      $(".accordion-controls")[i].setAttribute("role", "menu");
+    }
+    for (var i = 0; i < $(".accordion-controls li a").length; i++) {
+      $(".accordion-controls li a")[i].setAttribute("role", "menuitem");
+    }
+  }
   var accordionButtons = $(".accordion-controls li a");
   accordionButtons.attr("tabindex", "0");
 
