@@ -507,7 +507,7 @@ ul li::before {
     @apply text-white text-lg font-bold;
   }
   .bg-mp-azure * {
-    @apply text-dark-grey text-lg font-bold;
+    @apply text-dark-gray text-lg font-bold;
   }
 
   a.bg-deep-teal,

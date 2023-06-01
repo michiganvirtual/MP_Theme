@@ -1140,18 +1140,23 @@ ol.relative {
 }
 
 .tabs li > a.bg-mp-teal *, .tabs li > a
-  .bg-mp-blue *, .tabs li > a
-  .bg-mp-azure * {
+  .bg-mp-blue * {
   color: #ffffff;
 }
 
 .bg-mp-teal *, 
-  .bg-mp-blue *, 
-  .bg-mp-azure * {
+  .bg-mp-blue * {
   font-size: 1.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.bg-mp-azure * {
+  font-size: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(65 64 66 / var(--tw-text-opacity));
 }
 
 .tabs li > aa.bg-deep-teal, .tabs li > a
@@ -2102,6 +2107,11 @@ a.bg-white {
   color: rgb(214 231 235 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-mp-orange {
   --tw-text-opacity: 1;
   color: rgb(253 96 0 / var(--tw-text-opacity));
@@ -2110,11 +2120,6 @@ a.bg-white {
 .text-light-teal {
   --tw-text-opacity: 1;
   color: rgb(47 141 152 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
