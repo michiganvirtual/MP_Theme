@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         body: ["Martel Sans", "Roboto", "Noto Sans", "Helvetica", "Calibri"],
       },
+      fontSize: {
+        lg: ["1.25rem"],
+      },
       colors: {
         "deep-teal": "#093c44",
         "dark-teal": "#115e6e",
@@ -19,6 +22,15 @@ module.exports = {
         "mp-azure": "#D6E7EB",
         "mp-orange": "#fd6000",
       },
+    },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+      "lower-roman": "lower-roman",
+      circle: "circle",
     },
   },
   plugins: [],

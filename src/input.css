@@ -410,6 +410,120 @@ ul li::before {
 @tailwind components;
 @tailwind utilities;
 
-.bg-mp-teal {
-  @apply font-bold;
+@layer base {
+  h1 {
+    @apply text-2xl md:text-3xl font-bold tracking-tighter md:mt-6 mb-4;
+  }
+  h2 {
+    @apply text-xl md:text-2xl font-bold  tracking-tighter mb-4;
+  }
+  h3 {
+    @apply text-lg md:text-xl font-bold  tracking-tighter mb-2;
+  }
+  h4 {
+    @apply text-base md:text-lg font-bold  tracking-tighter mb-2;
+  }
+  a {
+    @apply text-mp-teal font-bold underline hover:no-underline;
+  }
+  p,
+  ul,
+  ol {
+    @apply text-lg md:text-lg text-dark-gray mb-2;
+  }
+  p:last-child {
+    @apply mb-4;
+  }
+  ul {
+    @apply list-disc ml-4 mb-4;
+  }
+  ol {
+    @apply list-decimal ml-4 mb-4;
+  }
+  ul > li > ul {
+    @apply list-square ml-4 my-4;
+  }
+  ul > li > ul > li > ul {
+    @apply list-circle ml-4 my-4;
+  }
+  ol > li > ol {
+    @apply list-roman ml-4 my-4;
+  }
+  ol > li > ol > li > ol {
+    @apply list-lower-roman ml-4 my-4;
+  }
+  li {
+    @apply mb-2;
+  }
+
+  /* Accordion Rules */
+
+  .accordion-controls,
+  .tabs {
+    @apply list-none ml-0;
+  }
+  .accordion-controls li {
+    @apply mb-0;
+  }
+  li.accordion-controls a,
+  .tabs li > a {
+    @apply no-underline;
+  }
+
+  /* Tabs Rules */
+
+  .tabs,
+  .tabs li {
+    @apply mb-0;
+  }
+  .tabs li > a {
+    @apply no-underline text-inherit;
+  }
+  .tabs li > a.text-white {
+    color: #ffffff !important;
+  }
+
+  /* Timeline Rules */
+  ol.relative {
+    @apply list-none;
+  }
+
+  /* Scenario Rules */
+  ul.response-container {
+    @apply list-none;
+  }
+
+  .bg-deep-teal *,
+  .bg-dark-teal *,
+  .bg-light-teal *,
+  .bg-ada-orange *,
+  .bg-ada-green *,
+  .bg-dark-gray *,
+  header * {
+    @apply text-white;
+  }
+  .bg-mp-teal *,
+  .bg-mp-blue *,
+  .bg-mp-azure * {
+    @apply text-white text-lg font-bold;
+  }
+
+  a.bg-deep-teal,
+  a.bg-dark-teal,
+  a.bg-light-teal,
+  a.bg-ada-orange,
+  a.bg-ada-green,
+  a.bg-dark-grey,
+  a.bg-mp-azure,
+  a.bg-mp-blue,
+  a.bg-mp-teal,
+  a.bg-mp-orange {
+    @apply text-white;
+  }
+  .bg-white * {
+    @apply text-dark-gray;
+  }
+  a.bg-white {
+    @apply text-dark-gray;
+  }
 }
