@@ -503,9 +503,11 @@ ul li::before {
     @apply text-white;
   }
   .bg-mp-teal *,
-  .bg-mp-blue *,
-  .bg-mp-azure * {
+  .bg-mp-blue * {
     @apply text-white text-lg font-bold;
+  }
+  .bg-mp-azure * {
+    @apply text-dark-grey text-lg font-bold;
   }
 
   a.bg-deep-teal,
