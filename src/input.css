@@ -465,7 +465,7 @@ ul li::before {
   .accordion-controls li {
     @apply mb-0;
   }
-  li.accordion-controls a,
+  li.accordion-controls > a,
   .tabs li > a {
     @apply no-underline;
   }
