@@ -405,6 +405,7 @@ ul li::before {
   padding: 1rem;
   margin-bottom: 20px;
   color: #000000;
+  font-weight: normal;
 }
 
 @tailwind base;
